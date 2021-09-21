@@ -75,7 +75,16 @@ img
       background-color: white
       padding: 20px
       color: black
-      width: 300px
+      width: 152%
+
+      &__desc
+         display: flex
+         border: 1px solid #daa749
+         padding: 15px
+
+      &__title, &__blok-sum
+         margin-right: 15px
+         font-size: 0.75em
 
 .invisible
    display: none
@@ -109,6 +118,7 @@ img
 .cart-item
    display: flex
    justify-content: space-between
+   width: 100%
 
    &:not(:last-child)
       margin-bottom: 20px
@@ -119,6 +129,8 @@ img
 .cart-item img
    align-self: flex-start
    margin-right: 15px
+   width: 150px
+   height: 120px
 
 .product-single-price
    color: #474747
@@ -145,11 +157,12 @@ img
    position: absolute
    bottom: 5px
    right: 0
+   cursor: pointer
 
 .search-form
    position: relative
    margin-right: 50px
-   display: none
+   display: inline-block
 
 .search-field:focus
    outline: none
@@ -162,3 +175,7 @@ img
    background-color: transparent
    border: none
    border-bottom: 2px solid #fafafa
+
+.search-box
+   position: absolute
+   z-index: 3
