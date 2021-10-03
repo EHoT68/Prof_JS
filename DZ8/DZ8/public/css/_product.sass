@@ -1,0 +1,157 @@
+
+.head_prod
+   display: flex
+   justify-content: space-between
+   width: 100%
+
+.crumb
+   margin-top: 54px
+   &_sub
+      display: flex
+
+      li
+         margin-left: 5px
+         display: flex
+         align-items: center
+
+         .crumb_sub_txt
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: #636363
+            display: flex
+            &:hover
+               color: $color_span
+
+         &::after
+            content: " / "
+            display: block
+            padding-left: 5px
+
+      .current
+         font-weight: bold
+         font-size: 14px
+         line-height: 17px
+         color: $color_span
+
+.carousel_prod
+   background: #F7F7F7
+
+.carousel_prod_sub
+   justify-content: center
+   position: relative
+
+.carousel-item
+   flex-direction: column
+   text-align: center
+
+.item-1_cart
+   border: 1px solid #EAEAEA
+   position: absolute
+   top: 680px
+   background: #FFFFFF
+   left: 0
+   display: flex
+   flex-direction: column
+   align-items: center
+
+   .ar_svg1, .ar_svg2
+      padding: 12px 17px
+      background: rgba(42, 42, 42, 0.15)
+      position: absolute
+      top: -400px
+
+   .ar_svg1
+      left: 0
+
+   .ar_svg2
+      right: 0
+
+   .ar_svg1:hover svg
+      fill: $color_span
+
+   .ar_svg2:hover svg
+      fill: $color_span
+
+.sec_color, .sec_size, .sec_quan
+   border: 0
+   color: #6F6E6E
+   background: none
+   font-weight: normal
+   font-size: 14px
+   line-height: 17px
+   padding: 5px
+
+   &:hover
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.item-1_cart_info
+   border-bottom: 1px solid #EAEAEA
+   margin-bottom: 65px
+   width: 50%
+
+.item-1_cart_info_p1
+   font-weight: 300
+   font-size: 14px
+   line-height: 17px
+   color: $color_span
+   padding-bottom: 12px
+   padding-top: 64px
+
+.item-1_cart_info_p2
+   font-weight: 300
+   font-size: 18px
+   line-height: 22px
+   color: #4D4D4D
+   padding-top: 12px
+   padding-bottom: 48px
+
+.item-1_cart_info_p3
+   font-weight: 300
+   font-size: 14px
+   line-height: 17px
+   text-align: center
+   color: #5E5E5E
+
+.item-1_cart_info_p4
+   font-weight: 300
+   font-size: 24px
+   line-height: 29px
+   color: $color_span
+   padding-top: 32px
+   padding-bottom: 65px
+
+.border_red
+   border: 2px solid $color_span
+   width: 63px
+   margin-left: 255px
+   display: flex
+
+.but_add_prod
+   background: none
+   border: 1px solid $color_span
+   color: $color_span
+   font-weight: normal
+   font-size: 16px
+   line-height: 19px
+   text-align: center
+   padding: 14px 56px 9px 30px
+   margin-top: 49px
+   margin-bottom: 65px
+   align-items: center
+   display: flex
+   margin-left: 120px
+
+   &_p
+      padding-left: 23px
+
+   &:hover
+      background: $color_span
+      color: #FFFFFF
+
+      &:hover svg
+         fill: #FFFFFF
+
+.pr_prod
+   margin-top: 664px
+   margin-bottom: 128px

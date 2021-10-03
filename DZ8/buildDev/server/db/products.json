@@ -1,0 +1,86 @@
+[
+  {
+    "img_product": "img/prod_item1.png",
+    "id_product": 111,
+    "product_name": "Куртка",
+    "product_title": "Модная тёплая и вообще огонь.",
+    "price": 52
+  },
+  {
+    "img_product": "img/prod_item2.png",
+    "id_product": 112,
+    "product_name": "Костюм",
+    "product_title": "Будете первой мадам на вечеринке.",
+    "price": 55
+  },
+  {
+    "img_product": "img/prod_item3.png",
+    "id_product": 113,
+    "product_name": "Худи",
+    "product_title": "Тёплая и пушистая .",
+    "price": 41
+  },
+  {
+    "img_product": "img/prod_item4.png",
+    "id_product": 114,
+    "product_name": "Брюки",
+    "product_title": "Цвет пляжный песок подойдёт для любого дня.",
+    "price": 70
+  },
+  {
+    "img_product": "img/prod_item5.png",
+    "id_product": 115,
+    "product_name": "Костюм",
+    "product_title": "Костюм лагуна только для вас лучшие тона.",
+    "price": 66
+  },
+  {
+    "img_product": "img/prod_item6.png",
+    "id_product": 116,
+    "product_name": "Сорочка",
+    "product_title": "Эти полоски вас точно не будут полнить.",
+    "price": 80
+  },
+  {
+    "img_product": "img/Catalog_item2.png",
+    "id_product": 117,
+    "product_name": "Рубашка",
+    "product_title": "Отличный цвет и фасон для модников.",
+    "price": 52
+  },
+  {
+    "img_product": "img/catalog_item5.png",
+    "id_product": 118,
+    "product_name": "Толстовка",
+    "product_title": "В холодные деньки она будет вас согревать.",
+    "price": 55
+  },
+  {
+    "img_product": "img/catalog_item6.png",
+    "id_product": 119,
+    "product_name": "Бейсболка",
+    "product_title": "Классная и молодёжная.",
+    "price": 41
+  },
+  {
+    "img_product": "img/Catalog_item7.png",
+    "id_product": 120,
+    "product_name": "Рубашка",
+    "product_title": "Рубашка белий как снех.",
+    "price": 70
+  },
+  {
+    "img_product": "img/Catalog_item8.png",
+    "id_product": 121,
+    "product_name": "Куртка",
+    "product_title": "Стильная косуха для настоящих металлистов.",
+    "price": 66
+  },
+  {
+    "img_product": "img/Catalog_item9.png",
+    "id_product": 122,
+    "product_name": "Рубашка",
+    "product_title": "Летняя рубашка с коротким рукавом.",
+    "price": 80
+  }
+]

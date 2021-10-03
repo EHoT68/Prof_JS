@@ -1,0 +1,161 @@
+.shop_cart_content
+   margin-top: 96px
+   margin-bottom: 128px
+   display: flex
+   justify-content: space-between
+
+.shop_cart_list
+   display: flex
+   flex-direction: column
+
+.shop-cart-list-item1
+   margin-bottom: 40px
+   display: flex
+
+   &:hover
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+.shop_cart_list_item1_img
+   height: 100%
+
+.shop_cart_list_item1_txt
+   padding-left: 31px
+   padding-right: 57px
+
+.shop_cart_item_p1
+   font-weight: bold
+   font-size: 24px
+   line-height: 29px
+   color: #222222
+   padding-top: 22px
+   padding-bottom: 42px
+
+.shop_cart_item_p2
+   font-size: 22px
+   line-height: 26px
+   color: #575757
+   display: flex
+
+.cart_p_span1
+   color: $color_span
+   font-weight: bold
+
+.cart_p_span2
+   font-size: 18px
+   line-height: 22px
+   color: #656565
+   border: 1px solid #EAEAEA
+   padding-left: 16px
+   margin-left: 15px
+   margin-right: 0
+
+.cart_battons
+   display: flex
+   justify-content: space-between
+
+.cart_battons_cler, .cart_battons_cont
+   text-decoration: none
+   font-weight: 300
+   font-size: 14px
+   line-height: 17px
+   color: #000000
+   border: 1px solid #A4A4A4
+   padding: 16px 39px
+   margin-top: 32px
+
+   &:hover
+      border: 1px solid #000000
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+.shop_cart_addres
+   display: flex
+   flex-direction: column
+
+   &_box1
+      display: flex
+      flex-direction: column
+      margin-top: 15px
+
+      &_p1
+         font-weight: 300
+         font-size: 16px
+         line-height: 19px
+         color: #222222
+
+      .inp1_adres
+         font-weight: 300
+         font-size: 13px
+         line-height: 16px
+         color: #222222
+         border: 1px solid #A4A4A4
+         height: 44px
+         padding-left: 17px
+         margin-top: 21px
+
+      .but_get
+         font-weight: 300
+         font-size: 11px
+         line-height: 13px
+         color: #4A4A4A
+         height: 35px
+         width: 101px
+         background: #FFFFFF
+         border: 1px solid #A4A4A4
+         margin-top: 24px
+         margin-bottom: 57px
+
+   &_box2
+      background: #f5f3f3
+      padding: 39px 42px 42px 44px
+
+      &_sub
+         border-bottom: 1px solid #E2E2E2
+         text-align: end
+
+         &_p1
+            font-weight: normal
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+            margin-bottom: 12px
+
+            .shop_cart_box2_span
+               padding-left: 34px
+
+         &_p2
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #222222
+            margin-bottom: 21px
+
+            .shop_cart_box2_span2
+               padding-left: 37px
+               color: $color_span
+               font-weight: bold
+
+      .inp_proceed
+         font-weight: 300
+         font-size: 16px
+         line-height: 19px
+         color: #FFFFFF
+         background: $color_span
+         border: 0
+         padding: 15px 43px 16px 41px
+         margin-top: 17px
+         width: 100%
+
+         &:hover
+            color: $color_span
+            background: #FFFFFF
+
+.svg_clos
+   cursor: pointer
+   padding-top: 28px
+   margin-right: 22px
+
+#cart_cloes
+   display: none
+
+   &:checked ~ .shop_cart_list_item1
+      display: none
