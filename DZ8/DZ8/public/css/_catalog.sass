@@ -1,0 +1,229 @@
+/*основной фильтр*/
+.main_filter
+   margin: 51px 0
+
+.main_filter input
+   display: none
+
+.main_filter .main_filter_lab
+   font-weight: 600
+   font-size: 14px
+   line-height: 17px
+   color: #000000
+   display: flex
+   padding-left: 16px
+   cursor: pointer
+   box-sizing: border-box
+
+   svg
+      margin-left: 10px
+
+.main_filter label:hover
+   color: $color_span
+
+   svg
+      fill: $color_span
+
+.main_filter input:checked + .main_filter_lab
+   color: $color_span
+
+   svg
+      fill: $color_span
+
+.main_filter input:checked + .main_filter_lab + .accord_filter
+   height: auto
+
+.catalog_filter
+   position: relative
+
+.accord_filter
+   height: 0
+   transition: color 0.5s, padding 0.5s
+   overflow: hidden
+   margin: 20px 0
+   position: absolute
+   z-index: 60
+   background: #FFFFFF
+
+.accord_filter .accord_filter_sub
+   width: 360px
+   background: #FFFFFF
+   display: flex
+   flex-direction: column
+   height: 0
+   line-height: 17px
+   padding: 0 33px
+   box-sizing: border-box
+   transition: padding 0.5s
+   overflow: hidden
+   font-size: 14px
+
+.accord_filter .accord_filter_sub a
+   text-decoration: none
+   margin: 0 0 10px
+   color: #6F6E6E
+
+.accord_filter label
+   border-left: 5px solid $color_span
+   border-bottom: 1px solid #EBEBEB
+   cursor: pointer
+   font-size: 14px
+   line-height: 17px
+   font-weight: 600
+   color: #6F6E6E
+   display: block
+   padding: 11px
+   box-sizing: border-box
+   z-index: 100
+   margin: 0 15px 18px 17px
+
+.accord_filter label:hover
+   color: $color_span
+
+.accord_filter input
+   display: none
+
+.accord_filter label:before
+   content: '\276F'
+   float: right
+
+.accord_filter input:checked + label
+   color: $color_span
+
+.accord_filter input:checked + label:before
+   transition: transform .35s
+   transform: rotate(90deg)
+
+.accord_filter input:checked + label + .accord_filter_sub
+   height: auto
+   margin-top: -5px
+   padding: 20px 30px 10px
+
+/*второстипенный фильтр*/
+
+.sub-filter
+   display: flex
+   margin: 51px 0 51px 290px
+
+   .sub-filter-block
+      padding-right: 27px
+      position: relative
+
+      .sub-filter-lab
+         font-size: 14px
+         line-height: 17px
+         color: #6F6E6E
+         cursor: pointer
+         display: block
+         box-sizing: border-box
+         align-items: center
+         transition: padding 0.5s
+         padding: 11px
+         display: inline-block
+
+         &:hover
+            color: $color_span
+
+         &:before
+            content: ' \276F'
+            float: right
+
+      .sub-filter-input:checked + .sub-filter-lab:before
+         transition: transform .35s
+         transform: rotate(90deg)
+
+.sub-filter-input
+   display: none
+
+.sub-filter-item
+   display: flex
+   flex-direction: column
+   width: 100%
+   background: #FFFFFF
+   height: 0
+   box-sizing: border-box
+   transition: padding 0.5s
+   overflow: hidden
+   font-size: 14px
+   line-height: 16px
+   color: #6F6E6E
+   position: absolute
+   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+   z-index: 50
+
+   &_width
+      width: 130px
+
+label input
+   margin-right: 9px
+
+.sub-filter-input:checked + .sub-filter-lab + .sub-filter-item
+   height: auto
+   padding: 9px
+
+.sect_catalog .products_item
+   margin-top: 0
+
+.sub-filter-lab_p1
+   margin-right: 10px
+
+   /*корзина*/   
+
+.basket-item
+   display: none
+   position: absolute
+   top: 35px
+   right: 0
+   background: #FFFFFF
+   z-index: 25
+   border: 1px solid $color_span
+   border-radius: 10px
+
+   &_li
+      display: flex
+      padding: 10px 20px
+      margin: 0
+      align-items: center
+
+   &_head
+      padding: 0
+   &_img
+      height: 100px
+   &_p
+      font-size: 17px
+      width: 150px
+      text-align: center
+      margin-bottom: 0
+      justify-content: center
+
+   &_total
+
+      padding-left: 20px
+      color: $color_span
+      font-size: 17px
+      font-weight: bold
+      padding: 15px 40px
+      background-color: #f5f3f3
+      border-top: 1px solid $color_span
+      border-radius: 10px
+      display: flex
+      justify-content: flex-end
+
+.basket:hover .basket-item
+   display: block
+
+/*нумерация страниц*/   
+.page-site
+   width: 100%
+   justify-content: center
+   margin-bottom: 72px
+   margin-top: 5px
+
+.page-item
+   margin-left: auto
+
+.page-link
+   color: #5D5D5D
+
+.page-link:hover
+   color: $color_span
